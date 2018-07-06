@@ -10,6 +10,8 @@
 // import our custom theme
 @import 'theme.scss';
 
+@include angular-material-theme($my-theme);
+
 body { 
   font-family: Roboto, Arial, sans-serif;
   margin: 0;
