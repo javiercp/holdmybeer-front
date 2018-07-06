@@ -1,5 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files 
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+*/
+
+@import '~@angular/material/theming';
+
+// always include only once per project
+@include mat-core();
+
+// import our custom theme
+@import 'theme.scss';
 
 body { 
   font-family: Roboto, Arial, sans-serif;
