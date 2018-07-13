@@ -2,7 +2,7 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home.component';
-import { SharedModule, WhoComponent } from '../shared';
+import { SharedModule, WhoComponent, WhereComponent, MapComponent } from '../shared';
 
 const homeRouting: ModuleWithProviders = RouterModule.forChild([
   {
@@ -19,6 +19,8 @@ const homeRouting: ModuleWithProviders = RouterModule.forChild([
   declarations: [
     HomeComponent,
     WhoComponent,
+    WhereComponent,
+    MapComponent,
   ]
 })
 export class HomeModule { }
