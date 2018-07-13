@@ -4,6 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -11,7 +13,7 @@ import { RouterModule } from '@angular/router';
     ReactiveFormsModule,
     HttpModule,
     RouterModule,
-
+    NgbModule,
   ],
   declarations: [],
   exports: [
@@ -20,7 +22,7 @@ import { RouterModule } from '@angular/router';
     ReactiveFormsModule,
     HttpModule,
     RouterModule,
-
+    NgbModule,
   ]
 })
 export class SharedModule {}

@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import {
   SharedModule,
@@ -21,11 +21,11 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
     HeaderComponent
   ],
   imports: [
-    NgbModule.forRoot(),
     BrowserModule,
     SharedModule,
     HomeModule,
-    rootRouting
+    rootRouting,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
