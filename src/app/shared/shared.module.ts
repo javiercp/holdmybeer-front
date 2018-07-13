@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import { MatToolbarModule, MatIconModule, MatButtonModule, MatCardModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -13,10 +12,6 @@ import { MatToolbarModule, MatIconModule, MatButtonModule, MatCardModule } from 
     HttpModule,
     RouterModule,
 
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatCardModule
   ],
   declarations: [],
   exports: [
@@ -26,10 +21,6 @@ import { MatToolbarModule, MatIconModule, MatButtonModule, MatCardModule } from 
     HttpModule,
     RouterModule,
 
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    MatCardModule
   ]
 })
 export class SharedModule {}

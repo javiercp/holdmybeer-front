@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import {
   SharedModule,
@@ -20,6 +21,7 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
     HeaderComponent
   ],
   imports: [
+    NgbModule.forRoot(),
     BrowserModule,
     SharedModule,
     HomeModule,

@@ -1,20 +1,33 @@
-/* You can add global styles to this file, and also import other style files 
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-*/
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
 
-@import '~@angular/material/theming';
-
-// always include only once per project
-@include mat-core();
-
-// import our custom theme
-@import 'theme.scss';
-
-@include angular-material-theme($my-theme);
-
-body { 
-  font-family: Roboto, Arial, sans-serif;
-  margin: 0;
+html,
+body
+{
+    height: 100%;
 }
 
+body, h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
 
+.white-text {
+    color: #fff !important;
+}
+
+.hr-light {
+    border-top: 1px solid #fff;
+}
+
+.btn-outline-white {
+    border: 2px solid #fff !important;
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+.my-4 {
+    margin-bottom: 1.5rem !important;
+}
+.my-4 {
+    margin-top: 1.5rem !important;
+}
