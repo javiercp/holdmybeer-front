@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpModule,
     RouterModule,
     NgbModule,
+    AgmCoreModule,
   ],
   declarations: [],
   exports: [
@@ -23,6 +25,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpModule,
     RouterModule,
     NgbModule,
+    AgmCoreModule,
   ]
 })
 export class SharedModule {}
