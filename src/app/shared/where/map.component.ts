@@ -10,6 +10,9 @@ export class MapComponent {
   zoom: number = 13;
   
   // initial center position for the map
-  lat: number = 51.673858;
-  lng: number = 7.815982;
+  lat: number = 43.36157258349801;
+  lng: number = -5.850718276979933;
+
+  label: string = 'A';
+  draggable: boolean = false;
 }

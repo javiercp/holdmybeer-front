@@ -3,5 +3,16 @@
         [latitude]="lat"
         [longitude]="lng"
         [zoom]="zoom">
+
+        <agm-marker 
+            [latitude]="lat"
+            [longitude]="lng"
+            [label]="label"
+            [markerDraggable]="draggable">
+
+            <agm-info-window>                
+                <strong><i class="fa fa-beer"></i> Come visit us!!</strong>
+            </agm-info-window>
+        </agm-marker>
     </agm-map>
 </div>
