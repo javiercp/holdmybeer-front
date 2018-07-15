@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AgmCoreModule } from '@agm/core';
+import { AgmCoreModule, MapsAPILoader } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
@@ -12,6 +12,8 @@ import {
   FooterComponent,
   HeaderComponent,
 } from './shared';
+
+import { CustomLazyAPIKeyLoader } from './services/custom-apikey-loader.service';
 
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: true });
 
@@ -27,11 +29,10 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
     HomeModule,
     rootRouting,
     NgbModule.forRoot(),
-    AgmCoreModule.forRoot({
-      apiKey: "$(process.env.MAPS_KEY)"
-    })
+    AgmCoreModule.forRoot()
   ],
-  providers: [],
+  providers: [{ provide: MapsAPILoader, useClass: CustomLazyAPIKeyLoader }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
