@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AgmCoreModule } from '@agm/core';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { AgmCoreModule } from '@agm/core';
     RouterModule,
     NgbModule,
     AgmCoreModule,
+    NgxDatatableModule,
   ],
   declarations: [],
   exports: [
@@ -26,6 +28,7 @@ import { AgmCoreModule } from '@agm/core';
     RouterModule,
     NgbModule,
     AgmCoreModule,
+    NgxDatatableModule,
   ]
 })
 export class SharedModule {}

@@ -3,6 +3,7 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AgmCoreModule, MapsAPILoader } from '@agm/core';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
@@ -29,7 +30,8 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
     HomeModule,
     rootRouting,
     NgbModule.forRoot(),
-    AgmCoreModule.forRoot()
+    AgmCoreModule.forRoot(),
+    NgxDatatableModule
   ],
   providers: [{ provide: MapsAPILoader, useClass: CustomLazyAPIKeyLoader }
   ],

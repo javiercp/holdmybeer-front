@@ -1,0 +1,16 @@
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+
+.ngx-datatable, .info {
+    margin: 0 auto;
+}
+
+.table-footer{
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.table-footer-data {
+    padding: 5px 10px 10px 5px; 
+    font-size: 12px
+}

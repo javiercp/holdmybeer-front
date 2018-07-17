@@ -13,5 +13,6 @@ Side project created to learn Angular and any new technology [I find interesting
 ## License: MIT
 
 ## Further Reading
-
+- [ng-bootstrap](https://ng-bootstrap.github.io/#/home)
 - [angular-google-maps](https://angular-maps.com/)
+- [ngx-datatable](https://github.com/swimlane/ngx-datatable)
