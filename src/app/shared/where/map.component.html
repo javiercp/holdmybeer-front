@@ -1,18 +1,10 @@
 <div id="map" class="map z-depth-1-half">
-    <agm-map
-        [latitude]="lat"
-        [longitude]="lng"
-        [zoom]="zoom">
 
-        <agm-marker 
-            [latitude]="lat"
-            [longitude]="lng"
-            [label]="label"
-            [markerDraggable]="draggable">
+    <div leaflet style="height: 400px;"
+		[leafletOptions]="options"
+		[leafletBaseLayers]="baseLayers"
+		[leafletLayers]="markers"
+		[leafletLayersControlOptions]="layersControlOptions">
+	</div>
 
-            <agm-info-window>                
-                <strong><i class="fa fa-beer"></i> Come visit us!!</strong>
-            </agm-info-window>
-        </agm-marker>
-    </agm-map>
 </div>

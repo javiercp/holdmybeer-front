@@ -4,8 +4,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AgmCoreModule } from '@agm/core';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
@@ -16,8 +16,8 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     HttpModule,
     RouterModule,
     NgbModule,
-    AgmCoreModule,
     NgxDatatableModule,
+    LeafletModule,
   ],
   declarations: [],
   exports: [
@@ -27,8 +27,8 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     HttpModule,
     RouterModule,
     NgbModule,
-    AgmCoreModule,
     NgxDatatableModule,
+    LeafletModule,
   ]
 })
 export class SharedModule {}
