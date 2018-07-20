@@ -14,7 +14,7 @@ import {
   HeaderComponent,
 } from './shared';
 
-import { CustomLazyAPIKeyLoader } from './services/custom-apikey-loader.service';
+import { CustomLazyAPIKeyLoader } from './core';
 
 const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: true });
 
